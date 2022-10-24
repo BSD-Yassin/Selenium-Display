@@ -1,0 +1,9 @@
+version: "3.7"
+
+services: 
+  app: 
+    image: "webapp:${APP_NAME}" 
+    environment: 
+      - DISPLAY={DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
